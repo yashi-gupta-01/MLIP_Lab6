@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh #!/bin/bash
+                sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
@@ -22,7 +22,7 @@ pipeline {
                 sudo /home/team13/miniconda3/condabin/conda run -n base pytest test_utility.py
 
                 echo 'pytest not runned'
-                ''''# exit 1 #comment this line after implementing Jenkinsfile'''
+                # exit 1 #comment this line after implementing Jenkinsfile'''
 
             }
         }
