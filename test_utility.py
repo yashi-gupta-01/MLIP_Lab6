@@ -22,6 +22,7 @@ def housing_data_sample():
       'furnishingstatus':["furnished","unfurnished"]}
     )
 
+
 def test_data_preparation(housing_data_sample):
     feature_df, target_series = data_preparation(housing_data_sample)
     # Target and datapoints has same length
